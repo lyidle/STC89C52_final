@@ -1,0 +1,7 @@
+".\Object\main.obj",
+".\Object\smg.obj",
+".\Object\ds18b20.obj",
+".\Object\keyValue.obj",
+".\Object\public.obj" 
+TO ".\Object\STC89C51_Fiveg_Final" 
+PRINT(".\STC89C51_Fiveg_Final.m51")

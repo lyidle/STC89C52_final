@@ -1,0 +1,1 @@
+"Source\Function\function.c" BROWSE INCDIR(.\Public;.\Source\ds18b20;.\Source\keyValue;.\Source\smg;.\Source\Function) DEBUG OBJECTEXTEND PRINT(.\function.lst) OBJECT(.\Object\function.obj)
