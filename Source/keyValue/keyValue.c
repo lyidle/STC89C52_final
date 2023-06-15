@@ -49,7 +49,7 @@ void time0_isr()interrupt 1{
     {
         Motor=0;
     }
-    Compare%=100;
+    Compare%=100;//防止数值溢出
 	 if(cd>3)cd=1;//超出三归1
 }
 //功能模块函数
@@ -95,9 +95,9 @@ void list(unsigned char num){
 				temp_buf[2]=0x40;//-
 				temp_buf[3]=0x00;//熄灭
 				temp_buf[4]=0x00;//熄灭
-				temp_buf[5]=0x7f;//8
-				temp_buf[6]=0x7f;//8
-				temp_buf[7]=0x7f;//8
+				temp_buf[5]=0x3f;//0
+				temp_buf[6]=0x3f;//0
+				temp_buf[7]=0x3f;//0
 			}
 			smg_display(temp_buf,1);//从左边第一个开始显示
 			if(i%2==0)return ;//每次间隔退出防止按键锁死
@@ -147,48 +147,54 @@ void KeyDown()
 		}
 	}
 	Motor=0;//关闭风扇
-	time0_init();//定时中断初始化	   
-	 
-	if(KeyValue==3){//功能1切换功能1-3	
-		flag_lis1=1;//打开S5、S6的按键功能
-		if(cd==1)Speed=20;//根据功能绑定PWM占比
-		if(cd==2)Speed=30;
-		if(cd==3)Speed=70;
-		list(1);
-	}
-	if(KeyValue==4){//功能2 增加60s	倒计时
-		if(flag_lis1)list(2);//flag_lis1初始不能用，要按下S4才能生效	   
-	}
-	if(KeyValue==5){//功能3  清零倒计时
-		if(flag_lis1)list(3);//flag_lis1初始不能用，要按下S4才能生效
-	}
-	if(KeyValue==6){//功能4	 室温
-		list(4);
-	} 
-	//检测按键松手检测
-	if(GPIO_KEY==0xf0&&KeyValue==3)	
-	{				
-		if(list1_falg)cd+=1;//功能数字显示切换
+	time0_init();//定时中断初始化
+	switch(KeyValue){
+		case 3://功能1切换功能1-3	
+			flag_lis1=1;//打开S5、S6的按键功能
+			switch(cd){//根据功能绑定PWM占比
+				case 1:Speed=20;break;
+				case 2:Speed=30;break;
+				case 3:Speed=70;break;
+			}		
+			list(1);
 		
-		list1_falg=1;//打开增加功能切换
-		if(cd>3)cd=1;//功能只有1-3	
-	}
-	//松手时增加或归零
-	if(GPIO_KEY==0xf0&&KeyValue==4)
-	{
-		if(flag_lis1)count+=60;
-		/*
-			增加60s 倒计时	只有按了S4打开开关后生效 
-			，按了后可以直接按归零或增加  按到室温时再关闭
-		*/
-	}
-	if(GPIO_KEY==0xf0&&KeyValue==5)
-	{
-		if(flag_lis1)count=0;//清零	 倒计时	 只有按了S4打开开关后生效
-	}
-	if(GPIO_KEY==0xf0&&KeyValue==6)	
-	{
-	  	flag_lis1=0;//关闭S5-S6按键
-		list1_falg=0;//关闭cd即功能切换
-	}
+			//检测按键松手检测
+			if(GPIO_KEY==0xf0)	
+			{				
+				if(list1_falg)cd+=1;//功能数字显示切换
+				
+				list1_falg=1;//打开增加功能切换
+				if(cd>3)cd=1;//功能只有1-3	
+			}
+		break;
+		case 4://功能2 增加60s	倒计时
+			if(flag_lis1)list(2);//flag_lis1初始不能用，要按下S4才能生效
+			//松手时增加
+			if(GPIO_KEY==0xf0)
+			{
+				if(flag_lis1)count+=60;
+				/*
+					增加60s 倒计时	只有按了S4打开开关后生效 
+					，按了后可以直接按归零或增加  按到室温时再关闭
+				*/
+			}
+		break;
+		case 5://功能3  清零倒计时
+			if(flag_lis1)list(3);//flag_lis1初始不能用，要按下S4才能生效  
+			//松手时归零
+			if(GPIO_KEY==0xf0)
+			{
+				if(flag_lis1)count=0;//清零	 倒计时	 只有按了S4打开开关后生效
+			}
+		break;
+		case 6://功能4	 室温
+			list(4);
+			//开关		   
+			if(GPIO_KEY==0xf0)	
+			{
+			  	flag_lis1=0;//关闭S5-S6按键
+				list1_falg=0;//关闭cd即功能切换
+			}
+		break;
+	} 
 }

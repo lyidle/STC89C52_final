@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        06/14/2023  22:43:47  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        06/15/2023  13:55:42  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -45,26 +45,26 @@ LINK MAP OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
             CODE    0003H     0008H     UNIT         ?PR?MAIN?MAIN
             CODE    000BH     0003H     ABSOLUTE     
             CODE    000EH     028BH     UNIT         ?C?LIB_CODE
-            CODE    0299H     013FH     UNIT         ?PR?KEYDOWN?KEYVALUE
-            CODE    03D8H     0101H     UNIT         ?PR?_LIST?KEYVALUE
-            CODE    04D9H     00D0H     UNIT         ?PR?TIME0_ISR?KEYVALUE
-            CODE    05A9H     0092H     UNIT         ?PR?_SMG_DISPLAY?SMG
-            CODE    063BH     008CH     UNIT         ?C_C51STARTUP
-            CODE    06C7H     007BH     UNIT         ?PR?DS18B20_READ_TEMPERTURE?DS18B20
-            CODE    0742H     0047H     UNIT         ?PR?DS18B20_CHECK?DS18B20
-            CODE    0789H     003FH     UNIT         ?PR?_DS18B20_WRITE_BYTE?DS18B20
-            CODE    07C8H     0028H     UNIT         ?C_INITSEG
-            CODE    07F0H     0026H     UNIT         ?PR?DS18B20_READ_BYTE?DS18B20
-            CODE    0816H     0020H     UNIT         ?PR?DS18B20_READ_BIT?DS18B20
-            CODE    0836H     001EH     UNIT         ?PR?_DELAY_MS?PUBLIC
-            CODE    0854H     0015H     UNIT         ?PR?TIME0_INIT?KEYVALUE
-            CODE    0869H     0012H     UNIT         ?PR?DS18B20_RESET?DS18B20
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 2
+            CODE    0299H     0135H     UNIT         ?PR?KEYDOWN?KEYVALUE
+            CODE    03CEH     0101H     UNIT         ?PR?_LIST?KEYVALUE
+            CODE    04CFH     00D0H     UNIT         ?PR?TIME0_ISR?KEYVALUE
+            CODE    059FH     0092H     UNIT         ?PR?_SMG_DISPLAY?SMG
+            CODE    0631H     008CH     UNIT         ?C_C51STARTUP
+            CODE    06BDH     007BH     UNIT         ?PR?DS18B20_READ_TEMPERTURE?DS18B20
+            CODE    0738H     0047H     UNIT         ?PR?DS18B20_CHECK?DS18B20
+            CODE    077FH     003FH     UNIT         ?PR?_DS18B20_WRITE_BYTE?DS18B20
+            CODE    07BEH     0028H     UNIT         ?C_INITSEG
+            CODE    07E6H     0026H     UNIT         ?PR?DS18B20_READ_BYTE?DS18B20
+            CODE    080CH     0020H     UNIT         ?PR?DS18B20_READ_BIT?DS18B20
+            CODE    082CH     001EH     UNIT         ?PR?_DELAY_MS?PUBLIC
+            CODE    084AH     0015H     UNIT         ?PR?TIME0_INIT?KEYVALUE
+            CODE    085FH     0012H     UNIT         ?PR?DS18B20_RESET?DS18B20
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 2
 
 
-            CODE    087BH     0010H     UNIT         ?PR?DS18B20_START?DS18B20
-            CODE    088BH     000BH     UNIT         ?PR?_DELAY_10US?PUBLIC
-            CODE    0896H     0007H     UNIT         ?PR?DS18B20_INIT?DS18B20
+            CODE    0871H     0010H     UNIT         ?PR?DS18B20_START?DS18B20
+            CODE    0881H     000BH     UNIT         ?PR?_DELAY_10US?PUBLIC
+            CODE    088CH     0007H     UNIT         ?PR?DS18B20_INIT?DS18B20
 
 
 
@@ -119,7 +119,7 @@ SEGMENT                                       DATA_GROUP
 ?PR?DS18B20_READ_BYTE?DS18B20               0032H    0002H
   +--> ?PR?DS18B20_READ_BIT?DS18B20
 
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 3
 
 
 ?PR?DS18B20_READ_BIT?DS18B20                0034H    0001H
@@ -167,7 +167,7 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:00B0H         PUBLIC        P3
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
-  C:05A9H         PUBLIC        _smg_display
+  C:059FH         PUBLIC        _smg_display
   D:0035H         PUBLIC        gsmg_code
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
@@ -179,35 +179,35 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   -------         PROC          _SMG_DISPLAY
   D:002BH         SYMBOL        dat
   D:0005H         SYMBOL        pos
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 4
 
 
   -------         DO            
   D:002EH         SYMBOL        i
   D:002FH         SYMBOL        pos_temp
   -------         ENDDO         
-  C:05A9H         LINE#         13
-  C:05AFH         LINE#         14
-  C:05AFH         LINE#         15
-  C:05B2H         LINE#         16
-  C:05B6H         LINE#         18
-  C:05BFH         LINE#         19
-  C:05BFH         LINE#         20
-  C:05E5H         LINE#         21
-  C:05E5H         LINE#         22
-  C:05E9H         LINE#         23
-  C:05EDH         LINE#         24
-  C:05F1H         LINE#         25
-  C:05F5H         LINE#         26
-  C:05FDH         LINE#         27
-  C:0605H         LINE#         28
-  C:060DH         LINE#         29
-  C:0613H         LINE#         30
-  C:0613H         LINE#         31
-  C:062BH         LINE#         32
-  C:0632H         LINE#         33
-  C:0635H         LINE#         34
-  C:063AH         LINE#         35
+  C:059FH         LINE#         13
+  C:05A5H         LINE#         14
+  C:05A5H         LINE#         15
+  C:05A8H         LINE#         16
+  C:05ACH         LINE#         18
+  C:05B5H         LINE#         19
+  C:05B5H         LINE#         20
+  C:05DBH         LINE#         21
+  C:05DBH         LINE#         22
+  C:05DFH         LINE#         23
+  C:05E3H         LINE#         24
+  C:05E7H         LINE#         25
+  C:05EBH         LINE#         26
+  C:05F3H         LINE#         27
+  C:05FBH         LINE#         28
+  C:0603H         LINE#         29
+  C:0609H         LINE#         30
+  C:0609H         LINE#         31
+  C:0621H         LINE#         32
+  C:0628H         LINE#         33
+  C:062BH         LINE#         34
+  C:0630H         LINE#         35
   -------         ENDPROC       _SMG_DISPLAY
   -------         ENDMOD        SMG
 
@@ -215,71 +215,71 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   C:0000H         SYMBOL        _ICE_DUMMY_
   D:0090H         PUBLIC        P1
   D:00B0H         PUBLIC        P3
-  C:0869H         PUBLIC        ds18b20_reset
+  C:085FH         PUBLIC        ds18b20_reset
   D:00A8H         PUBLIC        IE
-  C:087BH         PUBLIC        ds18b20_start
+  C:0871H         PUBLIC        ds18b20_start
   D:00B8H         PUBLIC        IP
-  C:07F0H         PUBLIC        ds18b20_read_byte
-  C:0896H         PUBLIC        ds18b20_init
-  C:0816H         PUBLIC        ds18b20_read_bit
-  C:0789H         PUBLIC        _ds18b20_write_byte
+  C:07E6H         PUBLIC        ds18b20_read_byte
+  C:088CH         PUBLIC        ds18b20_init
+  C:080CH         PUBLIC        ds18b20_read_bit
+  C:077FH         PUBLIC        _ds18b20_write_byte
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:06C7H         PUBLIC        ds18b20_read_temperture
+  C:06BDH         PUBLIC        ds18b20_read_temperture
   B:00B0H.7       PUBLIC        DS18B20_PORT
   D:00C8H         PUBLIC        T2CON
-  C:0742H         PUBLIC        ds18b20_check
+  C:0738H         PUBLIC        ds18b20_check
   D:00D0H         PUBLIC        PSW
   -------         PROC          DS18B20_RESET
-  C:0869H         LINE#         10
-  C:0869H         LINE#         11
-  C:0869H         LINE#         12
-  C:086BH         LINE#         13
-  C:0872H         LINE#         14
-  C:0874H         LINE#         15
+  C:085FH         LINE#         10
+  C:085FH         LINE#         11
+  C:085FH         LINE#         12
+  C:0861H         LINE#         13
+  C:0868H         LINE#         14
+  C:086AH         LINE#         15
   -------         ENDPROC       DS18B20_RESET
   -------         PROC          DS18B20_CHECK
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 5
 
 
   -------         DO            
   D:0032H         SYMBOL        time_temp
   -------         ENDDO         
-  C:0742H         LINE#         24
-  C:0742H         LINE#         25
-  C:0742H         LINE#         26
-  C:0745H         LINE#         28
-  C:074FH         LINE#         29
-  C:074FH         LINE#         30
-  C:0751H         LINE#         31
-  C:0758H         LINE#         32
-  C:075AH         LINE#         33
-  C:0764H         LINE#         34
-  C:0767H         LINE#         35
-  C:0771H         LINE#         36
-  C:0771H         LINE#         37
-  C:0773H         LINE#         38
-  C:077AH         LINE#         39
-  C:077CH         LINE#         40
-  C:0786H         LINE#         41
-  C:0788H         LINE#         42
+  C:0738H         LINE#         24
+  C:0738H         LINE#         25
+  C:0738H         LINE#         26
+  C:073BH         LINE#         28
+  C:0745H         LINE#         29
+  C:0745H         LINE#         30
+  C:0747H         LINE#         31
+  C:074EH         LINE#         32
+  C:0750H         LINE#         33
+  C:075AH         LINE#         34
+  C:075DH         LINE#         35
+  C:0767H         LINE#         36
+  C:0767H         LINE#         37
+  C:0769H         LINE#         38
+  C:0770H         LINE#         39
+  C:0772H         LINE#         40
+  C:077CH         LINE#         41
+  C:077EH         LINE#         42
   -------         ENDPROC       DS18B20_CHECK
   -------         PROC          DS18B20_READ_BIT
   -------         DO            
   D:0034H         SYMBOL        dat
   -------         ENDDO         
-  C:0816H         LINE#         50
-  C:0816H         LINE#         51
-  C:0816H         LINE#         52
-  C:0819H         LINE#         54
-  C:081BH         LINE#         55
-  C:081DH         LINE#         56
-  C:081FH         LINE#         57
-  C:0821H         LINE#         58
-  C:0829H         LINE#         59
-  C:082CH         LINE#         60
-  C:0833H         LINE#         61
-  C:0835H         LINE#         62
+  C:080CH         LINE#         50
+  C:080CH         LINE#         51
+  C:080CH         LINE#         52
+  C:080FH         LINE#         54
+  C:0811H         LINE#         55
+  C:0813H         LINE#         56
+  C:0815H         LINE#         57
+  C:0817H         LINE#         58
+  C:081FH         LINE#         59
+  C:0822H         LINE#         60
+  C:0829H         LINE#         61
+  C:082BH         LINE#         62
   -------         ENDPROC       DS18B20_READ_BIT
   -------         PROC          DS18B20_READ_BYTE
   -------         DO            
@@ -287,19 +287,19 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:0033H         SYMBOL        dat
   D:0007H         SYMBOL        temp
   -------         ENDDO         
-  C:07F0H         LINE#         70
-  C:07F0H         LINE#         71
-  C:07F0H         LINE#         72
-  C:07F3H         LINE#         73
-  C:07F5H         LINE#         74
-  C:07F6H         LINE#         76
-  C:07F8H         LINE#         77
-  C:07F8H         LINE#         78
-  C:07FBH         LINE#         79
-  C:080AH         LINE#         80
-  C:0813H         LINE#         81
-  C:0815H         LINE#         82
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 6
+  C:07E6H         LINE#         70
+  C:07E6H         LINE#         71
+  C:07E6H         LINE#         72
+  C:07E9H         LINE#         73
+  C:07EBH         LINE#         74
+  C:07ECH         LINE#         76
+  C:07EEH         LINE#         77
+  C:07EEH         LINE#         78
+  C:07F1H         LINE#         79
+  C:0800H         LINE#         80
+  C:0809H         LINE#         81
+  C:080BH         LINE#         82
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 6
 
 
   -------         ENDPROC       DS18B20_READ_BYTE
@@ -309,44 +309,44 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:0033H         SYMBOL        i
   D:0034H         SYMBOL        temp
   -------         ENDDO         
-  C:0789H         LINE#         90
-  C:078BH         LINE#         91
-  C:078BH         LINE#         92
-  C:078EH         LINE#         93
-  C:0790H         LINE#         95
-  C:0792H         LINE#         96
-  C:0792H         LINE#         97
-  C:0798H         LINE#         98
-  C:079EH         LINE#         99
-  C:07A2H         LINE#         100
-  C:07A2H         LINE#         101
-  C:07A4H         LINE#         102
-  C:07A6H         LINE#         103
-  C:07A8H         LINE#         104
-  C:07AFH         LINE#         105
-  C:07B1H         LINE#         107
-  C:07B1H         LINE#         108
-  C:07B3H         LINE#         109
-  C:07BAH         LINE#         110
-  C:07BCH         LINE#         111
-  C:07BEH         LINE#         112
-  C:07BEH         LINE#         113
-  C:07C7H         LINE#         114
+  C:077FH         LINE#         90
+  C:0781H         LINE#         91
+  C:0781H         LINE#         92
+  C:0784H         LINE#         93
+  C:0786H         LINE#         95
+  C:0788H         LINE#         96
+  C:0788H         LINE#         97
+  C:078EH         LINE#         98
+  C:0794H         LINE#         99
+  C:0798H         LINE#         100
+  C:0798H         LINE#         101
+  C:079AH         LINE#         102
+  C:079CH         LINE#         103
+  C:079EH         LINE#         104
+  C:07A5H         LINE#         105
+  C:07A7H         LINE#         107
+  C:07A7H         LINE#         108
+  C:07A9H         LINE#         109
+  C:07B0H         LINE#         110
+  C:07B2H         LINE#         111
+  C:07B4H         LINE#         112
+  C:07B4H         LINE#         113
+  C:07BDH         LINE#         114
   -------         ENDPROC       _DS18B20_WRITE_BYTE
   -------         PROC          DS18B20_START
-  C:087BH         LINE#         122
-  C:087BH         LINE#         123
-  C:087BH         LINE#         124
-  C:087EH         LINE#         125
-  C:0881H         LINE#         126
-  C:0886H         LINE#         127
+  C:0871H         LINE#         122
+  C:0871H         LINE#         123
+  C:0871H         LINE#         124
+  C:0874H         LINE#         125
+  C:0877H         LINE#         126
+  C:087CH         LINE#         127
   -------         ENDPROC       DS18B20_START
   -------         PROC          DS18B20_INIT
-  C:0896H         LINE#         136
-  C:0896H         LINE#         137
-  C:0896H         LINE#         138
-  C:0899H         LINE#         139
-  C:089CH         LINE#         140
+  C:088CH         LINE#         136
+  C:088CH         LINE#         137
+  C:088CH         LINE#         138
+  C:088FH         LINE#         139
+  C:0892H         LINE#         140
   -------         ENDPROC       DS18B20_INIT
   -------         PROC          DS18B20_READ_TEMPERTURE
   -------         DO            
@@ -355,32 +355,32 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:002FH         SYMBOL        datl
   D:0030H         SYMBOL        value
   -------         ENDDO         
-  C:06C7H         LINE#         148
-  C:06C7H         LINE#         149
-  C:06C7H         LINE#         151
-  C:06C9H         LINE#         152
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 7
+  C:06BDH         LINE#         148
+  C:06BDH         LINE#         149
+  C:06BDH         LINE#         151
+  C:06BFH         LINE#         152
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 7
 
 
-  C:06CBH         LINE#         153
-  C:06CFH         LINE#         155
-  C:06D2H         LINE#         156
-  C:06D5H         LINE#         157
-  C:06D8H         LINE#         158
-  C:06DDH         LINE#         159
-  C:06E2H         LINE#         161
-  C:06E7H         LINE#         162
-  C:06EAH         LINE#         163
-  C:06F7H         LINE#         165
-  C:06FEH         LINE#         166
-  C:06FEH         LINE#         167
-  C:070FH         LINE#         168
-  C:071DH         LINE#         169
-  C:071FH         LINE#         171
-  C:071FH         LINE#         172
-  C:0739H         LINE#         173
-  C:0739H         LINE#         174
-  C:0741H         LINE#         175
+  C:06C1H         LINE#         153
+  C:06C5H         LINE#         155
+  C:06C8H         LINE#         156
+  C:06CBH         LINE#         157
+  C:06CEH         LINE#         158
+  C:06D3H         LINE#         159
+  C:06D8H         LINE#         161
+  C:06DDH         LINE#         162
+  C:06E0H         LINE#         163
+  C:06EDH         LINE#         165
+  C:06F4H         LINE#         166
+  C:06F4H         LINE#         167
+  C:0705H         LINE#         168
+  C:0713H         LINE#         169
+  C:0715H         LINE#         171
+  C:0715H         LINE#         172
+  C:072FH         LINE#         173
+  C:072FH         LINE#         174
+  C:0737H         LINE#         175
   -------         ENDPROC       DS18B20_READ_TEMPERTURE
   -------         ENDMOD        DS18B20
 
@@ -391,7 +391,7 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:00B0H         PUBLIC        P3
   B:00A8H.7       PUBLIC        EA
   D:00A8H         PUBLIC        IE
-  C:04D9H         PUBLIC        time0_isr
+  C:04CFH         PUBLIC        time0_isr
   B:0090H.0       PUBLIC        Motor
   D:00B8H         PUBLIC        IP
   D:000AH         PUBLIC        KeyValue
@@ -399,7 +399,7 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:0098H         PUBLIC        SCON
   D:0089H         PUBLIC        TMOD
   D:0088H         PUBLIC        TCON
-  C:03D8H         PUBLIC        _list
+  C:03CEH         PUBLIC        _list
   C:0299H         PUBLIC        KeyDown
   D:000DH         PUBLIC        cd
   B:00A8H.1       PUBLIC        ET0
@@ -416,50 +416,50 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:0019H         PUBLIC        s
   D:001BH         PUBLIC        Speed
   D:001DH         PUBLIC        flag_lis1
-  C:0854H         PUBLIC        time0_init
+  C:084AH         PUBLIC        time0_init
   D:00D0H         PUBLIC        PSW
   -------         PROC          TIME0_INIT
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 8
 
 
-  C:0854H         LINE#         17
-  C:0854H         LINE#         18
-  C:0857H         LINE#         19
-  C:085AH         LINE#         20
-  C:085DH         LINE#         21
-  C:0860H         LINE#         22
-  C:0862H         LINE#         23
-  C:0864H         LINE#         24
-  C:0866H         LINE#         25
-  C:0868H         LINE#         26
+  C:084AH         LINE#         17
+  C:084AH         LINE#         18
+  C:084DH         LINE#         19
+  C:0850H         LINE#         20
+  C:0853H         LINE#         21
+  C:0856H         LINE#         22
+  C:0858H         LINE#         23
+  C:085AH         LINE#         24
+  C:085CH         LINE#         25
+  C:085EH         LINE#         26
   -------         ENDPROC       TIME0_INIT
   -------         PROC          TIME0_ISR
   -------         DO            
   D:0008H         SYMBOL        i
   -------         ENDDO         
-  C:04D9H         LINE#         28
-  C:04ECH         LINE#         30
-  C:04EFH         LINE#         31
-  C:04F2H         LINE#         33
-  C:0503H         LINE#         34
-  C:0509H         LINE#         35
-  C:0511H         LINE#         36
-  C:0520H         LINE#         37
-  C:0536H         LINE#         38
-  C:054CH         LINE#         39
-  C:055BH         LINE#         40
-  C:055BH         LINE#         41
-  C:0561H         LINE#         43
-  C:0569H         LINE#         44
-  C:0572H         LINE#         45
-  C:0572H         LINE#         46
-  C:0574H         LINE#         47
-  C:0576H         LINE#         49
-  C:0576H         LINE#         50
-  C:0578H         LINE#         51
-  C:0578H         LINE#         52
-  C:0587H         LINE#         53
-  C:0598H         LINE#         54
+  C:04CFH         LINE#         28
+  C:04E2H         LINE#         30
+  C:04E5H         LINE#         31
+  C:04E8H         LINE#         33
+  C:04F9H         LINE#         34
+  C:04FFH         LINE#         35
+  C:0507H         LINE#         36
+  C:0516H         LINE#         37
+  C:052CH         LINE#         38
+  C:0542H         LINE#         39
+  C:0551H         LINE#         40
+  C:0551H         LINE#         41
+  C:0557H         LINE#         43
+  C:055FH         LINE#         44
+  C:0568H         LINE#         45
+  C:0568H         LINE#         46
+  C:056AH         LINE#         47
+  C:056CH         LINE#         49
+  C:056CH         LINE#         50
+  C:056EH         LINE#         51
+  C:056EH         LINE#         52
+  C:057DH         LINE#         53
+  C:058EH         LINE#         54
   -------         ENDPROC       TIME0_ISR
   -------         PROC          _LIST
   D:001FH         SYMBOL        num
@@ -468,51 +468,51 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:0021H         SYMBOL        temp_value
   D:0023H         SYMBOL        temp_buf
   -------         ENDDO         
-  C:03D8H         LINE#         56
-  C:03DAH         LINE#         57
-  C:03DDH         LINE#         60
-  C:03E0H         LINE#         62
-  C:03F0H         LINE#         63
-  C:03F0H         LINE#         64
-  C:03F0H         LINE#         65
-  C:03F2H         LINE#         66
-  C:03FCH         LINE#         67
-  C:0401H         LINE#         68
-  C:0415H         LINE#         70
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 9
+  C:03CEH         LINE#         56
+  C:03D0H         LINE#         57
+  C:03D3H         LINE#         60
+  C:03D6H         LINE#         62
+  C:03E6H         LINE#         63
+  C:03E6H         LINE#         64
+  C:03E6H         LINE#         65
+  C:03E8H         LINE#         66
+  C:03F2H         LINE#         67
+  C:03F7H         LINE#         68
+  C:040BH         LINE#         70
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 9
 
 
-  C:041CH         LINE#         71
-  C:041FH         LINE#         72
-  C:0427H         LINE#         73
-  C:042AH         LINE#         74
-  C:042DH         LINE#         75
-  C:042FH         LINE#         76
-  C:0437H         LINE#         77
-  C:043FH         LINE#         78
-  C:0447H         LINE#         79
-  C:0447H         LINE#         81
-  C:044DH         LINE#         82
-  C:0450H         LINE#         83
-  C:0453H         LINE#         84
-  C:0456H         LINE#         85
-  C:0458H         LINE#         86
-  C:045AH         LINE#         87
-  C:047BH         LINE#         88
-  C:049AH         LINE#         89
-  C:049DH         LINE#         90
-  C:049DH         LINE#         92
-  C:04A9H         LINE#         93
-  C:04ACH         LINE#         94
-  C:04B4H         LINE#         95
-  C:04B7H         LINE#         96
-  C:04BAH         LINE#         97
-  C:04BCH         LINE#         98
-  C:04BFH         LINE#         99
-  C:04C2H         LINE#         100
-  C:04C5H         LINE#         101
-  C:04C5H         LINE#         102
-  C:04D0H         LINE#         103
+  C:0412H         LINE#         71
+  C:0415H         LINE#         72
+  C:041DH         LINE#         73
+  C:0420H         LINE#         74
+  C:0423H         LINE#         75
+  C:0425H         LINE#         76
+  C:042DH         LINE#         77
+  C:0435H         LINE#         78
+  C:043DH         LINE#         79
+  C:043DH         LINE#         81
+  C:0443H         LINE#         82
+  C:0446H         LINE#         83
+  C:0449H         LINE#         84
+  C:044CH         LINE#         85
+  C:044EH         LINE#         86
+  C:0450H         LINE#         87
+  C:0471H         LINE#         88
+  C:0490H         LINE#         89
+  C:0493H         LINE#         90
+  C:0493H         LINE#         92
+  C:049FH         LINE#         93
+  C:04A2H         LINE#         94
+  C:04AAH         LINE#         95
+  C:04ADH         LINE#         96
+  C:04B0H         LINE#         97
+  C:04B2H         LINE#         98
+  C:04B5H         LINE#         99
+  C:04B8H         LINE#         100
+  C:04BBH         LINE#         101
+  C:04BBH         LINE#         102
+  C:04C6H         LINE#         103
   -------         ENDPROC       _LIST
   -------         PROC          KEYDOWN
   C:0299H         LINE#         113
@@ -539,49 +539,53 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   C:02F5H         LINE#         136
   C:02F9H         LINE#         137
   C:02FFH         LINE#         145
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 10
 
 
   C:02FFH         LINE#         147
   C:02FFH         LINE#         148
   C:02FFH         LINE#         149
   C:0301H         LINE#         150
-  C:0304H         LINE#         152
-  C:0309H         LINE#         153
-  C:030FH         LINE#         154
-  C:031CH         LINE#         155
-  C:0329H         LINE#         156
-  C:0336H         LINE#         157
-  C:033BH         LINE#         158
-  C:033BH         LINE#         159
-  C:0340H         LINE#         160
-  C:034BH         LINE#         161
-  C:034BH         LINE#         162
-  C:0350H         LINE#         163
-  C:035BH         LINE#         164
-  C:035BH         LINE#         165
-  C:0360H         LINE#         166
-  C:0365H         LINE#         167
-  C:0365H         LINE#         169
-  C:036FH         LINE#         170
-  C:036FH         LINE#         171
-  C:037DH         LINE#         173
-  C:0383H         LINE#         174
-  C:0394H         LINE#         175
-  C:0394H         LINE#         177
-  C:039EH         LINE#         178
-  C:039EH         LINE#         179
-  C:03AFH         LINE#         184
-  C:03AFH         LINE#         185
-  C:03B9H         LINE#         186
-  C:03B9H         LINE#         187
-  C:03C4H         LINE#         188
-  C:03C4H         LINE#         189
-  C:03CEH         LINE#         190
-  C:03CEH         LINE#         191
-  C:03D3H         LINE#         192
-  C:03D7H         LINE#         193
-  C:03D7H         LINE#         194
+  C:0304H         LINE#         151
+  C:031DH         LINE#         152
+  C:031DH         LINE#         153
+  C:0323H         LINE#         154
+  C:0334H         LINE#         155
+  C:033CH         LINE#         156
+  C:0344H         LINE#         157
+  C:034AH         LINE#         158
+  C:034AH         LINE#         159
+  C:034FH         LINE#         162
+  C:0355H         LINE#         163
+  C:0355H         LINE#         164
+  C:0363H         LINE#         166
+  C:0369H         LINE#         167
+  C:037AH         LINE#         168
+  C:037AH         LINE#         169
+  C:037BH         LINE#         170
+  C:037BH         LINE#         171
+  C:0386H         LINE#         173
+  C:038CH         LINE#         174
+  C:038CH         LINE#         175
+  C:039DH         LINE#         180
+  C:039DH         LINE#         181
+  C:039EH         LINE#         182
+  C:039EH         LINE#         183
+  C:03A9H         LINE#         185
+  C:03AEH         LINE#         186
+  C:03AEH         LINE#         187
+  C:03B9H         LINE#         188
+  C:03B9H         LINE#         189
+  C:03BAH         LINE#         190
+  C:03BAH         LINE#         191
+  C:03BFH         LINE#         193
+  C:03C4H         LINE#         194
+  C:03C4H         LINE#         195
+  C:03C9H         LINE#         196
+  C:03CDH         LINE#         197
+  C:03CDH         LINE#         198
+  C:03CDH         LINE#         199
+  C:03CDH         LINE#         200
   -------         ENDPROC       KEYDOWN
   -------         ENDMOD        KEYVALUE
 
@@ -593,19 +597,19 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:00B8H         PUBLIC        IP
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:088BH         PUBLIC        _delay_10us
-  C:0836H         PUBLIC        _delay_ms
+  C:0881H         PUBLIC        _delay_10us
+  C:082CH         PUBLIC        _delay_ms
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 11
+
+
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          _DELAY_10US
   D:0006H         SYMBOL        ten_us
-BL51 BANKED LINKER/LOCATER V6.22                                                      06/14/2023  22:43:47  PAGE 11
-
-
-  C:088BH         LINE#         9
-  C:088BH         LINE#         10
-  C:088BH         LINE#         11
-  C:0895H         LINE#         12
+  C:0881H         LINE#         9
+  C:0881H         LINE#         10
+  C:0881H         LINE#         11
+  C:088BH         LINE#         12
   -------         ENDPROC       _DELAY_10US
   -------         PROC          _DELAY_MS
   D:0006H         SYMBOL        ms
@@ -613,11 +617,11 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
   D:0006H         SYMBOL        i
   D:0004H         SYMBOL        j
   -------         ENDDO         
-  C:0836H         LINE#         20
-  C:0836H         LINE#         21
-  C:0836H         LINE#         23
-  C:083FH         LINE#         24
-  C:0853H         LINE#         25
+  C:082CH         LINE#         20
+  C:082CH         LINE#         21
+  C:082CH         LINE#         23
+  C:0835H         LINE#         24
+  C:0849H         LINE#         25
   -------         ENDPROC       _DELAY_MS
   -------         ENDMOD        PUBLIC
 
@@ -654,5 +658,8 @@ SYMBOL TABLE OF MODULE:  .\Object\STC89C51_Fiveg_Final (MAIN)
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_DELAY_MS?PUBLIC
 
-Program Size: data=71.0 xdata=0 code=2205
+Program Size: data=71.0 xdata=0 code=2195
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2023  13:55:42  PAGE 12
+
+
 LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
