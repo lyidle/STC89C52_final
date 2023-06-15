@@ -294,7 +294,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Public;.\Source\ds18b20;.\Source\keyValue;.\Source\smg;.\Source\Function</IncludePath>
+              <IncludePath>.\Public;.\Source\ds18b20;.\Source\keyValue;.\Source\smg</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>

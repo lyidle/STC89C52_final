@@ -172,10 +172,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>19</ColumnNumber>
+      <ColumnNumber>58</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>9</CurrentLine>
+      <CurrentLine>8</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Test\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -221,10 +221,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>29</ColumnNumber>
+      <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>81</TopLine>
-      <CurrentLine>81</CurrentLine>
+      <TopLine>180</TopLine>
+      <CurrentLine>200</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Source\keyValue\keyValue.c</PathWithFileName>
       <FilenameWithoutPath>keyValue.c</FilenameWithoutPath>
@@ -253,7 +253,7 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\91251\Desktop\STC89C51_Fiveg_Final\SOURCE\KEYVALUE\KEYVALUE.H</PathWithFilename>
+    <PathWithFilename>C:\Users\91251\Desktop\新建文件夹 (2)\STC89C52_final\SOURCE\KEYVALUE\KEYVALUE.H</PathWithFilename>
     <TopLine>1</TopLine>
     <CurrentLine>8</CurrentLine>
     <Constant>0</Constant>
@@ -1619,23 +1619,23 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\Test\main.c</Name>
-          <ColumnNumber>19</ColumnNumber>
+          <ColumnNumber>58</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>9</CurrentLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\Source\keyValue\keyValue.c</Name>
-          <ColumnNumber>29</ColumnNumber>
-          <TopLine>81</TopLine>
-          <CurrentLine>81</CurrentLine>
+          <ColumnNumber>1</ColumnNumber>
+          <TopLine>180</TopLine>
+          <CurrentLine>200</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\SOURCE\KEYVALUE\KEYVALUE.H</Name>
-          <ColumnNumber>53</ColumnNumber>
+          <ColumnNumber>24</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>8</CurrentLine>
         </Doc>
